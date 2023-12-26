@@ -156,6 +156,26 @@ nav {
     display: none;
 }
 
+.header_container p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--white);
+    text-align: center;
+    opacity: 0.6;
+}
+
+.header_container h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.header_container h1 span{
+    color: var(--primary-color);
+}
+
 @media (width>768px) {
     nav {
         padding: 2rem 1rem;
@@ -187,7 +207,7 @@ nav {
         display: block;
     }
 
-    .nav_links a::hover {
+    .nav_links a::after {
         position: absolute;
         content: "";
         left: 0;
@@ -197,5 +217,10 @@ nav {
         background-color: var(--primary-color);
         transition: 0.3s;
         transform-origin: left;
+    }
+
+    .nav_links a:hover::after {
+        width: 100%;
+
     }
 }
